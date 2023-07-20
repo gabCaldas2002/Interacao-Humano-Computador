@@ -27,9 +27,12 @@ function App(){
   
   return(
     <div className='container'>
+      <h1>Lista de tarefas</h1>
       <input type="text" value={input} onChange={e => setInput(e.target.value)}/>
-      <button type="button" onClick={adicionar}>Adicionar</button>
-
+      <div className='botao'>
+        <button type="button" onClick={adicionar}>Adicionar</button>
+      </div>
+      
       <ul>
         {tarefas.map(tarefa => (
           <li key={tarefa}>{tarefa}</li>

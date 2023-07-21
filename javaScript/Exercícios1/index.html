@@ -1,12 +1,113 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-</html>
+<body>
+    <header>
+        <h1>Gabriel Caldas - exercícios</h1>
+    </header>
+    <section>
+        <div class="ex" id="ex1">
+            <h3>Escreva um programa em JavaScript que exiba na tela o maior número
+                entre dois números fornecidos pelo usuário.</h3>
+                <label for="numero1">Número 1:</label>
+                <input type="number" id="numero1" name="numero2">
+                <label for="numero2">Número 2:</label>
+                <input type="number" id="numero2" name="numero2">
+                <button onclick="maiorNumero()">Maior número</button>
+                <p id="maiorNumero"></p>
+        </div>
 
+        <div class="ex" id="ex2">
+            <h3>Escreva um programa em JavaScript que exiba na tela uma mensagem
+                de acordo com a nota do usuário. Se a nota for menor do que 6, exiba
+                "Reprovado". Se a nota for maior ou igual a 6 e menor do que 8, exiba
+                "Aprovado". Se a nota for maior ou igual a 8, exiba "Aprovado com louvor".</h3>
+            <label for="nota">Nota:</label>
+            <input type="number" id="nota" name="nota">
+            <button onclick="nota()">Nota</button>
+            <p id="notaresultado"></p>
+        </div>
+
+        <div class="ex" id="ex3">
+            <h3>Escreva um programa em JavaScript que exiba na tela a média dos
+                números de um vetor.</h3>
+            <label for="vetor">Vetor:</label>
+            <input type="text" id="vetor" name="vetor">
+            <button onclick="media()">Média</button>
+            <p id="mediaresultado"></p>
+        </div>
+
+        <div class="ex" id="ex4">
+            <h3>Escreva um programa em JavaScript que exiba na tela uma mensagem
+                de acordo com o valor de uma variável. Se a variável for igual a "a", exiba
+                "A". Se a variável for igual a "b", exiba "B". Se a variável não for nem "a"
+                nem "b", exiba "Outra letra".</h3>
+            <label for="letra">Letra:</label>
+            <input type="text" id="letra" name="letra">
+            <button onclick="letra()">Letra</button>
+            <p id="letraresultado"></p>
+        </div>
+
+        <div class="ex" id="ex5">
+            <h3>Escreva um programa em JavaScript que exiba na tela a soma dos
+                elementos de uma matriz.</h3>
+            <label for="matriz">Matriz:</label>
+            <input type="text" id="matriz" name="matriz">
+            <button onclick="matriz()">Matriz</button>
+            <p id="matrizresultado"></p>
+        </div>
+
+        <div class="ex" id="ex6">
+            <h3>Escreva um programa em JavaScript que exiba na tela o fatorial de um
+                número fornecido pelo usuário.</h3>
+            <label for="fatorial">Fatorial:</label>
+            <input type="number" id="fatorial" name="fatorial">
+            <button onclick="fatorial()">Fatorial</button>
+            <p id="fatorialresultado"></p>
+        </div>
+
+        <div class="ex" id="ex7">
+            <h3>Escreva um programa em JavaScript que exiba na tela uma mensagem
+                de acordo com a escolha do usuário em um menu de opções. O menu
+                deve ter as opções "1. Opção 1", "2. Opção 2" e "3. Opção 3". Se o usuário
+                escolher a opção 1, exiba "Opção 1 escolhida". Se o usuário escolher a
+                opção 2, exiba "Opção 2 escolhida". Se o usuário escolher a opção 3,
+                exiba "Opção 3 escolhida". Se o usuário escolher uma opção inválida,
+                exiba "Opção inválida".</h3>
+            <select name="opcao" id="opcao">
+                <option value="1">Opção 1</option>
+                <option value="2">Opção 2</option>
+                <option value="3">Opção 3</option>
+            </select>
+                <button onclick="opcao()">Menu</button>
+                <p id="opcaoresultado"></p>
+        </div>
+
+        <div class="ex" id="ex8">
+            <h3>Escreva um programa em JavaScript que exiba na tela o maior número
+                de um vetor.
+            </h3>
+            <label for="vetor2">Vetor:</label>
+            <input type="text" id="vetor2" name="vetor2">
+            <button onclick="maiorVetor()">Maior vetor</button>
+            <p id="maiorVetorResultado"></p>
+        </div>
+
+        <div class="ex" id="ex9">
+            <h3>Escreva um programa em JavaScript que exiba na tela a média dos
+                elementos de uma matriz.</h3>
+            <label for="matriz2">Matriz:</label>
+            <input type="text" id="matriz2" name="matriz2">
+            <button onclick="mediaMatriz()">Média matriz</button>
+            <p id="mediaMatrizResultado"></p>
+        </div>
+    </section>
     
+</body>
+</html>
